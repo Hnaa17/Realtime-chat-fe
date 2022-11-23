@@ -1,0 +1,19 @@
+.list-account {
+    overflow: auto !important;
+    height: 65vh;
+    padding: 12px;
+}
+
+.fullname {
+    box-sizing: border-box;
+}
+
+.btncolor {
+  background-color: #7E98DF;
+  border-radius: 10px;
+}
+
+.textcolor {
+  color: #7E98DF;
+}
+  

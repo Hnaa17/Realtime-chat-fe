@@ -1,0 +1,23 @@
+.header-friend {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.chat-content {
+    overflow: hidden;
+}
+
+.chatlis {
+    margin-top: 90px;
+    height: 79vh;
+    overflow: auto;
+}
+
+.btncolor {
+    background-color: #7E98DF;
+    border-radius: 10px;
+}
+
+.textcolor {
+    color: #7E98DF;
+}
