@@ -17,7 +17,7 @@ const Profile = ({ Rectangle, onMenu, idUser, setEdit }) => {
     const [show, setShow] = useState(false);
     const getUserById = () => {
         axios
-        .get(`${process.env.REACT_APP_API}/users/${idUser}`)
+        .get(`${process.env.REACT_APP_API}users/${idUser}`)
         .then((res) => {
             setProfile(res.data.data[0]);
         })
@@ -118,6 +118,7 @@ const Profile = ({ Rectangle, onMenu, idUser, setEdit }) => {
         </div>
         {/* account */}
         <h3 className="textcolor">Account</h3>
+        
         <div className="list-account">
           {/* phone */}
           <div className="mt-1">

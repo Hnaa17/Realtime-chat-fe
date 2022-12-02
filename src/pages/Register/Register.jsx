@@ -13,7 +13,7 @@ const Register = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    password: "",
+    password: ""
   });
 
   const handleChange = (e) => {

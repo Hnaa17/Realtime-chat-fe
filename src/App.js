@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {
   BrowserRouter,
   Routes,
@@ -13,7 +13,7 @@ import useWindowDimensions from './components/window-size/WindowSize.jsx';
 import ListFriends from './pages/mobile/ListFriends.jsx';
 
 function App () {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
     <>

@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 export const register = (data, navigate, setLoading) => async (dispatch) => {
   try {
     const result = await axios.post(
-      process.env.REACT_APP_API + "/auth/register",
+      `${process.env.REACT_APP_API}auth/register`,
       data
     );
     const user = result.message;
@@ -33,7 +33,7 @@ export const register = (data, navigate, setLoading) => async (dispatch) => {
 export const login = (data, navigate, setLoading) => async (dispacth) => {
   try {
     const result = await axios.post(
-      process.env.REACT_APP_API + "/auth/login",
+      `${process.env.REACT_APP_API}auth/login`,
       data
     );
     const user = result.data;
@@ -64,7 +64,7 @@ export const login = (data, navigate, setLoading) => async (dispacth) => {
 export const getUserById = (idUser) => async (dispatch) => {
   try {
     const result = await axios.get(
-      `${process.env.REACT_APP_API}/users/${idUser}`
+      `${process.env.REACT_APP_API}users/${idUser}`
     );
     const userId = result.data.data[0];
     dispatch({ type: "GET_USER_BY_ID", payload: userId });

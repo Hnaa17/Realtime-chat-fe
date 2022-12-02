@@ -5,7 +5,7 @@ export const editName =
   (idUser, data, setEdit, handleClose, setLoading) => async (dispatch) => {
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API}/users/edit-name/${idUser}`,
+        `${process.env.REACT_APP_API}users/edit-name/${idUser}`,
         data
       );
       const nameUpdate = result.data.data;
@@ -38,7 +38,7 @@ export const editNumber =
   (idUser, number, setEdit, handleClose, setLoading) => async (dispatch) => {
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API}/users/edit-phone/${idUser}`,
+        `${process.env.REACT_APP_API}users/edit-phone/${idUser}`,
         number
       );
       const numberUpdate = result.data.data;
@@ -71,7 +71,7 @@ export const editPhoto =
   (idUser, formData, setEdit, handleClose, setLoading) => async (dispatch) => {
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API}/users/edit/${idUser}`,
+        `${process.env.REACT_APP_API}users/edit/${idUser}`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -107,7 +107,7 @@ export const editUserName =
   (idUser, data, setEdit, handleClose, setLoading) => async (dispatch) => {
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API}/users/edit-shortname/${idUser}`,
+        `${process.env.REACT_APP_API}users/edit-shortname/${idUser}`,
         data
       );
       const updateUsername = result.data.data;
@@ -140,7 +140,7 @@ export const editBio =
   (idUser, data, setEdit, handleClose, setLoading) => async (dispatch) => {
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API}/users/edit-bio/${idUser}`,
+        `${process.env.REACT_APP_API}users/edit-bio/${idUser}`,
         data
       );
       const updateBio = result.data.data;

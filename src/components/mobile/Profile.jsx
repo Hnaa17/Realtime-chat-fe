@@ -20,7 +20,7 @@ const Profile = ({
     const [profile, setProfile] = useState([]);
     useEffect(() => {
         axios
-        .get(`${process.env.REACT_APP_API}/users/${idUser}`)
+        .get(`${process.env.REACT_APP_API}users/${idUser}`)
         .then((res) => {
             setProfile(res.data.data[0]);
         })

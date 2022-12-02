@@ -1,9 +1,8 @@
 .list-account {
     overflow: auto !important;
-    height: 65vh;
+    height: 50vh;
     padding: 12px;
 }
-
 .fullname {
     box-sizing: border-box;
 }

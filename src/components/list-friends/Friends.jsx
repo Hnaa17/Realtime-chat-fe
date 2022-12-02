@@ -20,14 +20,14 @@ const Friends = ({
     const [searchGroup, setSearchGroup] = useState("");
     const getUser = () => {
         axios
-        .get(`${process.env.REACT_APP_API}/users?search=${searchFriend}`)
+        .get(`${process.env.REACT_APP_API}users?search=${searchFriend}`)
         .then((res) => setListFriend(res.data.data))
         .catch((err) => console.log(err));
     };
 
     const getGroup = () => {
         axios
-        .get(`${process.env.REACT_APP_API}/group?key=${searchGroup}`)
+        .get(`${process.env.REACT_APP_API}group?key=${searchGroup}`)
         .then((res) => setListGroup(res.data.data))
         .catch((err) => console.log(err));
     };

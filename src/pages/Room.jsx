@@ -1,5 +1,5 @@
 import "./ChatRoom.module.css"
-import React, { useEffect, useState } from "react";
+import React from "react";
 import MessageReceived from "../components/messages/MessageReceived";
 import MessageSender from "../components/messages/MessageSender";
 import moment from "moment";

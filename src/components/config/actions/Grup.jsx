@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 export const addGroup = (data, handleClose, setLoading) => async (dispatch) => {
   try {
     const result = await axios.post(
-      `${process.env.REACT_APP_API}/group/create`,
+      `${process.env.REACT_APP_API}group/create`,
       data
     );
     const newGroup = result.data.data;
